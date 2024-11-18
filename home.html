@@ -8,6 +8,10 @@
             font-family: Arial, sans-serif;
             text-align: center;
         }
+
+        .qr-code {
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -15,6 +19,12 @@
     <h1>Welcome Home!</h1>
     <p id="welcome-message"></p>
     <button onclick="logout()">Logout</button>
+
+    <!-- QR Code Section -->
+    <div class="qr-code">
+        <p>Share this site with others!</p>
+        <img src="frame.png" alt="QR Code to share the site" width="200">
+    </div>
 
     <script>
         // Retrieve the user's email from localStorage
